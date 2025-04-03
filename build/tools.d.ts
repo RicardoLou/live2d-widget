@@ -1,12 +1,13 @@
 declare function showHitokoto(): void;
+declare function toggleChat(): void;
 declare const tools: {
     hitokoto: {
         icon: string;
         callback: typeof showHitokoto;
     };
-    asteroids: {
+    chat: {
         icon: string;
-        callback: () => void;
+        callback: typeof toggleChat;
     };
     'switch-model': {
         icon: string;
